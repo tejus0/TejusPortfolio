@@ -330,6 +330,7 @@ export const positionsOfResponsibility = [
     title: "Technical Head, Samarpan (Technical Society)",
     description: 
       "Drove successful workshops on the latest technologies like programming with a 95% satisfaction rate from post-event feedback. Collaborated dynamically on team-based innovative web development projects.",
+      link:"https://www.linkedin.com/posts/tejus-chaturvedi-a42801179_gui-work-success-activity-6936646129405038592-F6Uk?utm_source=share&utm_medium=member_desktop"
   },
   {
     id: 1,
@@ -337,6 +338,7 @@ export const positionsOfResponsibility = [
     date: "Sep 2021 - Apr 2022",
     description: 
       "Mentored teams in solving problems on platforms like HackerEarth. Guided teams in programming contests and helped them excel in problem-solving.",
+      link:"https://www.youtube.com/@mr.geeksman400/videos"
   },
 ];
 

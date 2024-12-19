@@ -7,7 +7,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 60px 0px;
+  padding: 60px 16px; /* Added left and right padding for spacing */
 `;
 
 const Wrapper = styled.div`
@@ -24,6 +24,10 @@ const Title = styled.h2`
   font-weight: 600;
   color: ${({ theme }) => theme.text_primary};
   margin-bottom: 24px;
+
+  @media (max-width: 768px) {
+    font-size: 28px; /* Adjust title size for smaller screens */
+  }
 `;
 
 const AchievementCard = styled.div`
@@ -33,8 +37,13 @@ const AchievementCard = styled.div`
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease-in-out;
+
   &:hover {
     transform: translateY(-5px);
+  }
+
+  @media (max-width: 768px) {
+    padding: 16px; /* Adjust padding for smaller screens */
   }
 `;
 
@@ -43,12 +52,20 @@ const AchievementTitle = styled.h3`
   font-weight: 700;
   color: ${({ theme }) => theme.text_primary || '#FFFFFF'};
   margin-bottom: 8px;
+
+  @media (max-width: 768px) {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
 `;
 
 const AchievementDescription = styled.p`
   font-size: 16px;
   color: ${({ theme }) => theme.text_secondary || '#B3B3B3'};
   line-height: 1.6;
+
+  @media (max-width: 768px) {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
 `;
 
 const Achievements = () => {
